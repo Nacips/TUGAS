@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:background="@drawable/bg_card"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+    <!-- FOTO SNACK -->
+    <ImageView
+        android:id="@+id/imgSnack"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/popcorn" />
+
+    <!-- NAMA -->
+    <TextView
+        android:id="@+id/tvSnackName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Popcorn Caramel"
+        android:textColor="@color/white_text"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+    <!-- KATEGORI -->
+    <TextView
+        android:id="@+id/tvSnackCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Snack"
+        android:textColor="@color/gray_text"
+        android:textSize="13sp" />
+
+    <!-- HARGA -->
+    <TextView
+        android:id="@+id/tvSnackPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Rp25.000"
+        android:textColor="@color/blue_soft"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <!-- BUTTON -->
+    <Button
+        android:id="@+id/btnAddSnack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/bg_button_primary"
+        android:text="🍿 Tambah"
+        android:textAllCaps="false"
+        android:textColor="@color/white_text" />
+
+</LinearLayout>

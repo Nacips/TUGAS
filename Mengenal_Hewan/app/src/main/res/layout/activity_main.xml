@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F8FB">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+        <TextView
+            android:id="@+id/tvJudul"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mengenal Nama Hewan"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="#1A237E"
+            android:gravity="center"
+            android:padding="12dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Klik gambar hewan untuk mendengar suaranya"
+            android:textSize="16sp"
+            android:textColor="#333333"
+            android:gravity="center"
+            android:paddingBottom="16dp" />
+        <GridLayout
+            android:id="@+id/gridHewan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:useDefaultMargins="true">
+        </GridLayout>
+    </LinearLayout>
+</ScrollView>

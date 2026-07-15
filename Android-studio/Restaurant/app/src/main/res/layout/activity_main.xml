@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F6FB">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- HEADER -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="210dp"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:paddingTop="35dp"
+            android:background="#3F51B5">
+
+            <TextView
+                android:text="Dashboard"
+                android:textSize="32sp"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/txtUsername"
+                android:text="Selamat Datang, User"
+                android:textSize="20sp"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <!-- GRID MENU -->
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:padding="16dp">
+
+            <!-- MAKANAN -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/menuMakanan"
+                android:layout_width="0dp"
+                android:layout_height="190dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp">
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:src="@drawable/makanan"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"/>
+
+                    <TextView
+                        android:text="Menu Makanan"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- MINUMAN -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/menuMinuman"
+                android:layout_width="0dp"
+                android:layout_height="190dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp">
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:src="@drawable/minuman"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"/>
+
+                    <TextView
+                        android:text="Menu Minuman"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- PEMESANAN -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/menuPemesanan"
+                android:layout_width="0dp"
+                android:layout_height="190dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp">
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:src="@drawable/pemesanan"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"/>
+
+                    <TextView
+                        android:text="Pemesanan"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- ABOUT -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/menuAbout"
+                android:layout_width="0dp"
+                android:layout_height="190dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp">
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:src="@drawable/about"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"/>
+
+                    <TextView
+                        android:text="About Us"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </GridLayout>
+
+    </LinearLayout>
+</ScrollView>

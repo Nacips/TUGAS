@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_bg"
+    android:fillViewport="true"
+    android:overScrollMode="never">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- HEADER -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="💳 Pembayaran"
+            android:textColor="@color/white_text"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="Selesaikan transaksi tiket dan snack Anda"
+            android:textColor="@color/gray_text"
+            android:textSize="14sp" />
+
+        <!-- PAYMENT CARD -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:background="@drawable/bg_card"
+            android:elevation="8dp"
+            android:orientation="vertical"
+            android:padding="22dp">
+
+            <!-- TITLE -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="🧾 Detail Pesanan"
+                android:textColor="@color/white_text"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <!-- SUMMARY LIST -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvPaymentSummary"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:layout_marginTop="16dp"
+                android:nestedScrollingEnabled="false" />
+
+            <!-- TOTAL CARD -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:background="#12FFFFFF"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Total Pembayaran"
+                        android:textColor="@color/gray_text"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/tvPaymentTotal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="Rp0"
+                        android:textColor="@color/white_text"
+                        android:textSize="26sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="💰"
+                    android:textSize="34sp" />
+
+            </LinearLayout>
+
+            <!-- INPUT TITLE -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="Masukkan Nominal Pembayaran"
+                android:textColor="@color/white_text"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <!-- INPUT -->
+            <EditText
+                android:id="@+id/etBayar"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_input_dark"
+                android:fontFamily="sans-serif"
+                android:hint="Contoh: 100000"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:maxLines="1"
+                android:paddingStart="18dp"
+                android:paddingEnd="18dp"
+                android:textColor="@color/white_text"
+                android:textColorHint="@color/gray_text"
+                android:textSize="16sp" />
+
+            <!-- STATUS CARD -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:background="#102196F3"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/tvStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Status: Belum Dibayar ⏳"
+                    android:textColor="@color/blue_soft"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvKembalian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Kembalian: Rp0"
+                    android:textColor="@color/white_text"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <!-- PAY BUTTON -->
+            <Button
+                android:id="@+id/btnBayar"
+                android:layout_width="match_parent"
+                android:layout_height="62dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/bg_button_primary"
+                android:elevation="4dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="💳 Bayar Sekarang"
+                android:textAllCaps="false"
+                android:textColor="@color/white_text"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!-- PRINT BUTTON -->
+            <Button
+                android:id="@+id/btnToPrint"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/bg_button_primary"
+                android:backgroundTint="@color/blue_soft"
+                android:fontFamily="sans-serif-medium"
+                android:text="🖨️ Lanjut Cetak Struk"
+                android:textAllCaps="false"
+                android:textColor="@color/white_text"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
