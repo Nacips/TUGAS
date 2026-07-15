@@ -1,6 +1,6 @@
 # Dokumentasi Tugas Praktik PABP
 
-Repositori ini berisi kumpulan latihan dan tugas kuliah Praktik Pemrograman Aplikasi Bergerak (PABP).
+Repositori ini berisi kumpulan latihan dan tugas kuliah Praktik Pemrograman Aplikasi Perangkat Bergerak (PABP).
 
 ## Pembagian Folder Aplikasi
 
